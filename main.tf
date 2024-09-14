@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "s3_bucket" {
-  source = "./projects/s3-bucket"
+  source = "./modules/s3-bucket"
 
   bucket_name = var.bucket_name
   region      = var.region
