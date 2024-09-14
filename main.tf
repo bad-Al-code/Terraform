@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-module "s3_bucket" {
+module "aws_s3_bucket" {
   source = "./modules/aws-s3-bucket"
 
   bucket_name = var.bucket_name
@@ -21,3 +21,10 @@ module "s3_bucket" {
 }
 
 
+module "aws_key_pair" {
+  source = "./modules/aws-key-pair"
+
+  key_name        = var.key_name
+  public_key_path = var.public_key_path
+  environment     = var.environment
+}
