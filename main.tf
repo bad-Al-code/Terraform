@@ -12,7 +12,12 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# Create a VPC
-resource "aws_vpc" "example" {
-  cidr_block = "10.0.0.0/16"
+module "s3_bucket" {
+  source = "./projects/s3-bucket"
+
+  bucket_name = var.bucket_name
+  region      = var.region
+  environment = var.environment
 }
+
+
