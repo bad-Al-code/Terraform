@@ -1,12 +1,20 @@
 
 output "bucket_id" {
-  value = module.s3_bucket.bucket_id
+  value = module.aws_s3_bucket.bucket_id
 }
 
 output "bucket_arn" {
-  value = module.s3_bucket.bucket_arn
+  value = module.aws_s3_bucket.bucket_arn
 }
 
 output "website_endpoint" {
-  value = module.s3_bucket.website_endpoint
+  value = module.aws_s3_bucket.website_endpoint
+}
+
+output "key_name" {
+  value = module.aws_key_pair.key_name
+}
+
+output "key_pair_id" {
+  value = module.aws_key_pair.key_pair_id
 }
