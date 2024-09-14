@@ -11,7 +11,7 @@ This repository contains a collection of Terraform modules optimized in a modula
 ├── outputs.tf              # Global outputs
 ├── terraform.tfvars        # Variable values
 ├── modules/                # Directory containing individual project modules
-│   └── s3-bucket/          # S3 bucket project module
+│   └── aws-s3-bucket/          # S3 bucket project module
 │       ├── README.md       # Description of the module
 │       ├── main.tf         # S3 bucket specific configuration
 │       ├── variables.tf    # S3 bucket specific variables
@@ -29,20 +29,21 @@ git clone https://github.com/bad-Al-code/Terraform
 cd Terraform
 ```
 
-3. Initialize Terraform
+3. Change `terraform.tfvars.sample` to `terraform.tfvars`
+4. Review and modify the `terraform.tfvars` file to set desired variable values
+5. Initialize Terraform
 
 ```bash
 terraform init
 ```
 
-4. Review and modify the `terraform.tfvars` file to set your desired variable values
-5. Plan your Terraform changes
+6. Plan your Terraform changes
 
 ```bash
 terraform plan
 ```
 
-6. Apply the Terraform changes:
+7. Apply the Terraform changes:
 
 ```bash
 terraform apply
