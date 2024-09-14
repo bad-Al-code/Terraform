@@ -1,0 +1,4 @@
+bucket_name = "your_bucket_name"
+region      = "your_regin_name"
+environment = "your_environement"
+
