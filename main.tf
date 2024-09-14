@@ -28,3 +28,9 @@ module "aws_key_pair" {
   public_key_path = var.public_key_path
   environment     = var.environment
 }
+
+module "aws_vpc" {
+  source = "./modules/aws-vpc"
+
+  environment = var.environment
+}

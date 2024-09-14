@@ -18,3 +18,7 @@ output "key_name" {
 output "key_pair_id" {
   value = module.aws_key_pair.key_pair_id
 }
+
+output "vpc_id" {
+  value = module.aws_vpc.vpc_id
+}
