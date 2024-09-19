@@ -69,5 +69,5 @@ module "your_new_project" {
 
 ### Best Practices
 
-- Keep sensitive information out of version control. Use `terraform.tfvars` for variable values and ensure it's listed in `.gitignore`
+- Keep sensitive information out of version control. Use `terraform.tfvars` for variable values and ensure it's listed in `.gitignore`.
 - Use consistent naming conventions across your modules.
