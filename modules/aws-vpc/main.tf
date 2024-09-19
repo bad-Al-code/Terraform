@@ -19,3 +19,13 @@ resource "aws_subnet" "public_subnet_dev" {
     Name = "${var.environment}-subnet"
   }
 }
+
+# Internet Gateway
+resource "aws_internet_gateway" "public_internet_gateway" {
+  vpc_id = aws_vpc.public_vpc_dev.id
+  tags = {
+    Name = "public-internet-gateway-${var.environment}"
+  }
+}
+
+
