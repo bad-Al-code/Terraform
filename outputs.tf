@@ -22,3 +22,11 @@ output "key_pair_id" {
 output "vpc_id" {
   value = module.aws_vpc.vpc_id
 }
+
+output "subnet_id" {
+  value = module.aws_vpc.subnet_id
+}
+
+output "internet_gateway_id" {
+  value = module.aws_vpc.internet_gateway_id
+}

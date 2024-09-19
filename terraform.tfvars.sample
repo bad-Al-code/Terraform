@@ -1,4 +1,8 @@
-bucket_name = "your_bucket_name"
-region      = "your_regin_name"
-environment = "your_environement"
+bucket_name = "bucket_name"
+region      = "regin_name"
+environment = "environement"
 
+key_name        = "key_name"
+public_key_path = "key_path_location"
+
+availability_zone = "region_name"

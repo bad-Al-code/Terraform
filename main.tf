@@ -32,5 +32,6 @@ module "aws_key_pair" {
 module "aws_vpc" {
   source = "./modules/aws-vpc"
 
-  environment = var.environment
+  environment       = var.environment
+  availability_zone = var.availability_zone
 }
