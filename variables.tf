@@ -22,3 +22,8 @@ variable "public_key_path" {
   description = "Path to the public key file"
   type        = string
 }
+
+variable "availability_zone" {
+  description = "AZ for Subent"
+  type        = string
+}
